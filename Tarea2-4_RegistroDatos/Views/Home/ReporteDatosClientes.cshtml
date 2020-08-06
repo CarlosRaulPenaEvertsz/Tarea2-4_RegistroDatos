@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ReporteDatosClientes</title>
+</head>
+<body>
+    <div>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 5px;
+                text-align: left;
+            }
+        </style>
+
+        <table style="width:100%">
+            <tr>
+                <th>Nombre Completo</th>
+                <th>Cédula</th>
+                <th>Teléfono</th>
+                <th>Correo Electrónico</th>
+            </tr>
+            <tr>
+
+                @Html.Raw(ViewData["RelacionClientes"])
+
+            </tr>
+        </table>
+
+        <br />
+        <a href="/">Retornar</a>
+    </div>
+</body>
+</html>

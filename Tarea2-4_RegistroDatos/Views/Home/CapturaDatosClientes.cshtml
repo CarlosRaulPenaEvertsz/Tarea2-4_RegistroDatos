@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CapturaDatosClientes</title>
+</head>
+<body>
+    <div>
+        <h1>Captura Datos de Clientes<br /></h1>
+        <form method="post" action="/Home/RegistroDatos">
+            <p>Nombre Completo:<br /><input type="text" name="nombre" /></p>
+            <p>Cédula:<br /><input type="text" name="cedula" /></p>
+            <p>Teléfono:<br /><input type="text" name="telefono" /></p>
+            <p>Email:<br /><input type="text" name="correo" /></p>
+            <br />
+            <p><input type="submit" value="Registrar Datos" /></p>
+        </form>
+
+
+    </div>
+</body>
+</html>
