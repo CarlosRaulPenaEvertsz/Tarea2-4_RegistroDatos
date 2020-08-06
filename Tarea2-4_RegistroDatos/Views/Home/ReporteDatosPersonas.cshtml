@@ -8,10 +8,11 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>ReporteDatosClientes</title>
+    <title>ReporteDatosPersonas</title>
 </head>
 <body>
     <div>
+        <h1>Reporte de Personas<br /></h1>
         <style>
             table, th, td {
                 border: 1px solid black;
@@ -33,7 +34,7 @@
             </tr>
             <tr>
 
-                @Html.Raw(ViewData["RelacionClientes"])
+                @Html.Raw(ViewData["RelacionPersonas"])
 
             </tr>
         </table>

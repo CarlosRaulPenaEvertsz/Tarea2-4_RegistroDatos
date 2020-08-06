@@ -13,7 +13,7 @@ namespace Tarea2_4_RegistroDatos.Controllers
         {
             return View();
         }
-        public ActionResult CapturaDatosClientes()
+        public ActionResult CapturaDatosPersonas()
         {
             return View();
         }
@@ -24,16 +24,16 @@ namespace Tarea2_4_RegistroDatos.Controllers
             string telefono = Request.Form["telefono"].ToString();
             string correo = Request.Form["correo"].ToString();
 
-            Models.clsDatosClientes datosClientes = new Models.clsDatosClientes();
-            datosClientes.RegistrarCliente(nombre, cedula, telefono, correo);
+            Models.clsDatosPersonas datosPersonas = new Models.clsDatosPersonas();
+            datosPersonas.RegistrarPersonas(nombre, cedula, telefono, correo);
             
             return View();
         }
-        public ActionResult ReporteDatosClientes()
+        public ActionResult ReporteDatosPersonas()
         {
-            Models.clsDatosClientes datosClientes = new Models.clsDatosClientes();
-            string TodosLosClientes = datosClientes.LeerClientes();
-            ViewData["RelacionClientes"] = TodosLosClientes;
+            Models.clsDatosPersonas datosPersonas = new Models.clsDatosPersonas();
+            string TodasLasPersonas = datosPersonas.LeerPersonas();
+            ViewData["RelacionPersonas"] = TodasLasPersonas;
             return View();
         }
     }

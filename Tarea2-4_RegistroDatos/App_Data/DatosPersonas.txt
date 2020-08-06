@@ -1,3 +1,4 @@
 <tr><td>Carlos Pena</td><td>001-0715242-1</td><td>809-452-4534</td><td>carlospena@hotmail.com</td></tr>
 <tr><td>Jose Morillo</td><td>001-0741251-3</td><td>829-541-2542</td><td>josemorillo@hotmail.com</td></tr>
 <tr><td>Maria Almonte</td><td>023-0451854-0</td><td>849-454-5124</td><td>mariaalmonto@yahoo.es</td></tr>
+<tr><td>Mariano Ortega</td><td>001-2045178-5</td><td>849-742-4563</td><td>marianoortega74@gmail.com</td></tr>
